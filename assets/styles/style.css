@@ -49,6 +49,12 @@ h2 {
   flex-direction: column;
 }
 
+input {
+  outline: none;
+  border: 1px solid #0f6481;
+  padding: 3px;
+}
+
 .cash-input input {
   width: 100px;
 }
@@ -72,12 +78,6 @@ img {
 
 label {
   text-transform: uppercase;
-}
-
-input {
-  outline: none;
-  border: 1px solid #0f6481;
-  padding: 3px;
 }
 
 button {
