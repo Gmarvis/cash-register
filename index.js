@@ -1,3 +1,18 @@
+let btn = document.getElementById("btn");
+let PENNY = document.getElementById("penny");
+let NICKEL = document.getElementById("neckel");
+let DIME = document.getElementById("dime");
+let QUARTER = document.getElementById("quarter");
+let ONE = document.getElementById("one");
+let FIVE = document.getElementById("five");
+let TEN = document.getElementById("ten");
+let TWENTY = document.getElementById("twenty");
+let bill = document.getElementById("bill");
+let payment = document.getElementById("payment");
+let status = document.getElementById("status");
+
+// const ONE_HUNDRED = document.querySelector("penny").value;
+
 let denom = [
   { name: "ONE HUNDRED", value: 100.0 },
   { name: "TWENTY", value: 20.0 },
@@ -53,7 +68,6 @@ const checkCashRegister = (price, cash, cid) => {
       val += denom[i].value;
     }
 
-
     if (val > 0) {
       newResults.push([cid[i][0], val]);
     }
@@ -66,20 +80,56 @@ const checkCashRegister = (price, cash, cid) => {
 
   result.status = "OPEN";
   result.change = newResults;
-  console.log(newResults);
+
+  // console.log(result);
+
   return result;
 };
 
-console.log(
-  checkCashRegister(19.5, 20, [
-    ["PENNY", 1.01],
-    ["NICKEL", 2.05],
-    ["DIME", 3.1],
-    ["QUARTER", 4.25],
-    ["ONE", 90],
-    ["FIVE", 55],
-    ["TEN", 20],
-    ["TWENTY", 60],
+// console.log(
+//   checkCashRegister(19.5, 20, [
+//     ["PENNY", PENNY],
+//     ["NICKEL",NICKEL],
+//     ["DIME", DIME],
+//     ["QUARTER", QUARTER],
+//     ["ONE", ONE],
+//     ["FIVE", FIVE],
+//     ["TEN", TEN],
+//     ["TWENTY", TWENTY],
+//     ["ONE HUNDRED", 100],
+//   ])
+// );
+
+// btn.addEventListener(
+//   "click",
+//   checkCashRegister(19.5, 20, [
+//     ["PENNY", 1.01],
+//     ["NICKEL", 2.05],
+//     ["DIME", 3.1],
+//     ["QUARTER", 4.25],
+//     ["ONE", 90],
+//     ["FIVE", 55],
+//     ["TEN", 20],
+//     ["TWENTY", 60],
+//     ["ONE HUNDRED", 100],
+//   ])
+// );
+
+btn.addEventListener("click", () => {
+  const result = checkCashRegister(bill.value, payment.value, [
+    ["PENNY", PENNY.value],
+    ["NICKEL", NICKEL.value],
+    ["DIME", DIME.value],
+    ["QUARTER", QUARTER.value],
+    ["ONE", ONE.value],
+    ["FIVE", FIVE.value],
+    ["TEN", TEN.value],
+    ["TWENTY", TWENTY.value],
     ["ONE HUNDRED", 100],
-  ])
-);
+  ]);
+
+  console.log({ result });
+  document.getElementById(
+    "status"
+  ).innerHTML = `<p>${result.status}</p> <br/>   <p>${result.change}</p>`;
+});
