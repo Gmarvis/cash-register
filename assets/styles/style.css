@@ -24,7 +24,7 @@ h2 {
   width: 50vw;
 }
 
-.imagesSEction {
+.imagesSection {
   background-color: #073746;
   width: 50vw;
 }
@@ -65,7 +65,7 @@ h2 {
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
-.imagesSEction {
+.imagesSection {
   align-items: center;
   justify-self: center;
   display: flex;
@@ -112,7 +112,7 @@ button:hover {
 }
 
 @media screen and (max-width: 967px) {
-  .imagesSEction {
+  .imagesSection {
     width: 30vw;
   }
 
@@ -122,7 +122,7 @@ button:hover {
 }
 
 @media screen and (max-width: 700px) {
-  .imagesSEction {
+  .imagesSection {
     display: none;
   }
 
