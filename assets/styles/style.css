@@ -26,6 +26,9 @@ h2 {
 
 .images-section {
   background-color: #073746;
+  align-items: center;
+  justify-self: center;
+  display: flex;
   width: 50vw;
 }
 
@@ -60,12 +63,6 @@ h2 {
   justify-content: space-between;
   padding: 4%;
   box-shadow: #0000001a 0 0 5px 0, #0000001a 0 0 1px 0;
-}
-
-.images-section {
-  align-items: center;
-  justify-self: center;
-  display: flex;
 }
 
 img {
