@@ -81,7 +81,7 @@ const checkCashRegister = (price, cash, cid) => {
   result.status = "OPEN";
   result.change = newResults;
 
-  // console.log(result);
+  console.log(result);
 
   return result;
 };
@@ -117,17 +117,17 @@ const checkCashRegister = (price, cash, cid) => {
 
 btn.addEventListener("click", () => {
   const result = checkCashRegister(bill.value, payment.value, [
-    ["PENNY", PENNY.value],
-    ["NICKEL", NICKEL.value],
-    ["DIME", DIME.value],
-    ["QUARTER", QUARTER.value],
-    ["ONE", ONE.value],
-    ["FIVE", FIVE.value],
-    ["TEN", TEN.value],
-    ["TWENTY", TWENTY.value],
+    ["PENNY", +PENNY.value],
+    ["NICKEL", +NICKEL.value],
+    ["DIME", +DIME.value],
+    ["QUARTER", +QUARTER.value],
+    ["ONE", +ONE.value],
+    ["FIVE", +FIVE.value],
+    ["TEN", +TEN.value],
+    ["TWENTY", +TWENTY.value],
     ["ONE HUNDRED", 100],
   ]);
-
+  console.log("test: ",typeof PENNY.value);
   console.log({ result });
   document.getElementById(
     "status"

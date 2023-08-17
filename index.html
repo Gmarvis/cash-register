@@ -13,71 +13,85 @@
         <div class="section">
           <div class="cash-input">
             <label for="penny">PENNY</label>
-            <input id="penny" name="penny" type="number" />
+            <input id="penny" name="penny" type="number" value="1.01" />
           </div>
 
           <div class="cash-input">
             <label for="neckel">NECKEL</label>
-            <input id="neckel" name="neckel" type="number" />
+            <input id="neckel" name="neckel" type="number" value="2.05" />
           </div>
         </div>
         <div class="section">
           <div class="cash-input">
             <label for="dime">dime</label>
-            <input id="dime" name="dime" type="number" />
+            <input id="dime" name="dime" type="number" value="3.1" />
           </div>
 
           <div class="cash-input">
             <label for="quarter">quarter</label>
-            <input id="quarter" name="quarter" type="number" />
+            <input id="quarter" name="quarter" type="number" value="4.25" />
           </div>
         </div>
         <div class="section">
           <div class="cash-input">
             <label for="one">one</label>
-            <input id="one" name="one" type="number" />
+            <input id="one" name="one" type="number" value="90" />
           </div>
 
           <div class="cash-input">
             <label for="five">five</label>
-            <input id="five" name="five" type="number" />
+            <input id="five" name="five" type="number" value="55" />
           </div>
         </div>
         <div class="section">
           <div class="cash-input">
             <label for="ten">ten</label>
-            <input id="ten" name="ten" type="number" />
+            <input id="ten" name="ten" type="number" value="20" />
           </div>
 
           <div class="cash-input">
             <label for="twenty">twenty</label>
-            <input id="twenty" name="twenty" type="number" />
+            <input id="twenty" name="twenty" type="number" value="60" />
           </div>
         </div>
       </div>
 
       <div class="bill-section">
         <div class="bill-inputs">
-          <div>
-            <label for="bill">Bill</label>
-            <br />
-            <input id="bill" type="number" placeholder="Total bill" />
-            <br />
-            <label for="Payment">Payment</label>
-            <br />
-            <input id="payment" type="number" placeholder="payment" />
+          <div class="change">
+            <div>
+              <label for="bill">Bill</label>
+              <br />
+              <input
+                id="bill"
+                type="number"
+                placeholder="Total bill"
+                value="19.5"
+              />
+              <br />
+            </div>
+            <div>
+              <label for="Payment">Payment</label>
+              <br />
+              <input
+                id="payment"
+                type="number"
+                placeholder="payment"
+                value="20"
+              />
+            </div>
           </div>
         </div>
 
         <div class="status" id="status"></div>
 
         <br />
-        <button id="btn">Change</button>
+        <button id="btn">Calculate Change</button>
       </div>
     </div>
-    <div class="images-section">
+    <!-- <div class="images-section">
       <img src="/assets/images/Manage money-cuate.svg" alt="" />
-    </div>
+    </div> -->
 
     <script src="./index.js"></script>
   </body>
