@@ -127,9 +127,10 @@ btn.addEventListener("click", () => {
     ["TWENTY", +TWENTY.value],
     ["ONE HUNDRED", 100],
   ]);
-  console.log("test: ",typeof PENNY.value);
+  console.log("test: ", typeof PENNY.value);
   console.log({ result });
   document.getElementById(
     "status"
-  ).innerHTML = `<p>${result.status}</p> <br/>   <p>${result.change}</p>`;
+  ).innerHTML = `<p><span>Status:</span>${result.status}</p>
+  <p><span>Change:</span> ${result.change}</p>`;
 });
