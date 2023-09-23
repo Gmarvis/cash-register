@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Cash Register</h2>
+      <div class="cash">
+        <div class="section">
+          <div class="cash-input">
+            <label for="penny">PENNY</label>
+            <input id="penny" name="penny" type="number" value="1.01" />
+          </div>
+
+          <div class="cash-input">
+            <label for="neckel">NECKEL</label>
+            <input id="neckel" name="neckel" type="number" value="2.05" />
+          </div>
+        </div>
+        <div class="section">
+          <div class="cash-input">
+            <label for="dime">dime</label>
+            <input id="dime" name="dime" type="number" value="3.1" />
+          </div>
+
+          <div class="cash-input">
+            <label for="quarter">quarter</label>
+            <input id="quarter" name="quarter" type="number" value="4.25" />
+          </div>
+        </div>
+        <div class="section">
+          <div class="cash-input">
+            <label for="one">one</label>
+            <input id="one" name="one" type="number" value="90" />
+          </div>
+
+          <div class="cash-input">
+            <label for="five">five</label>
+            <input id="five" name="five" type="number" value="55" />
+          </div>
+        </div>
+        <div class="section">
+          <div class="cash-input">
+            <label for="ten">ten</label>
+            <input id="ten" name="ten" type="number" value="20" />
+          </div>
+
+          <div class="cash-input">
+            <label for="twenty">twenty</label>
+            <input id="twenty" name="twenty" type="number" value="60" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bill-section">
+        <div class="bill-inputs">
+          <div class="change">
+            <div>
+              <label for="bill">Bill</label>
+              <br />
+              <input
+                id="bill"
+                type="number"
+                placeholder="Total bill"
+                value="19.5"
+              />
+              <br />
+            </div>
+            <div>
+              <label for="Payment">Payment</label>
+              <br />
+              <input
+                id="payment"
+                type="number"
+                placeholder="payment"
+                value="20"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="statusdiv">
+          <h3>Change :</h3>
+          <div class="status" id="status"></div>
+        </div>
+
+        <br />
+        <button id="btn">Calculate Change</button>
+      </div>
+    </div>
+    <!-- <div class="images-section">
+      <img src="/assets/images/Manage money-cuate.svg" alt="" />
+    </div> -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
